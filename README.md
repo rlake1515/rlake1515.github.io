@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Changed from Github Pages
 
 You can use the [editor on GitHub](https://github.com/rlake1515/rlake1515.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
