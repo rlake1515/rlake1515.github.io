@@ -2,7 +2,7 @@ h1 {
     color: blue;
 }
 .parallax1 {
-    background-image: http://wallpaper-gallery.net/images/background-image/background-image-17.jpg;
+    background-image: url("http://wallpaper-gallery.net/images/background-image/background-image-17.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
