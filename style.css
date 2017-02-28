@@ -1,7 +1,7 @@
 h1 {
     color: blue;
 }
-#parallax1 {
+.parallax1 {
     background-image: http://wallpaper-gallery.net/images/background-image/background-image-17.jpg;
     min-height: 500px;
     background-attachment: fixed;
@@ -10,7 +10,7 @@ h1 {
     background-size: cover;
     background-color: red;
 }
-#box1 {
+.box1 {
     height: 1000px;
     background-color: blue;
 }
