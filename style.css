@@ -21,18 +21,26 @@
 }
 .content {
   padding: 40px 0;
+  text-align: center;
 }
 .parallax {
   height: 600px;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+.parallax p{
+    font-size: 25px;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    text-align: center;
+}
 .parallax h1 {
   color: rgba(255, 255, 255, 0.8);
+  padding-top: 200px;
   font-size: 48px;
-  line-height: 600px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -46,6 +54,25 @@
 }
 .parallax-3 {
   background-image: url("https://wallpaperbrowse.com/media/images/background-18.jpg");
+}
+/*Title fade-in effect */
+.ease {
+
+    position: relative;
+    -webkit-animation: mymove 1s; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 700ms;
+    animation-fill-mode: forwards;
+}
+#title {
+    opacity: 0;
+}
+@keyframes mymove {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    from {bottom: -200px;}
+    to {bottom: 0px;}
 }
 
 @media all and (min-width: 600px) {
@@ -63,4 +90,67 @@
   section.module.parallax h1 {
     font-size: 160px;
   }
+}
+
+/* Fixed Sidebar */
+#sidebar { 
+  width: 12%; 
+  position: fixed; 
+  margin-left: 85%;
+  margin-top: 10%;
+  background: white;
+  border-radius: 15px;
+  list-style: none;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: .8;
+  transition: .3s ease-in-out;
+}
+#sidebar:hover{
+    transform: scale(1.3);
+}
+.navElement{
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+.navElement:hover{
+    background-color: #449;
+}
+ul {
+    list-style-type: none;
+}
+
+
+/* Project scroll-up effect */
+.project {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: #999;
+    float: left;
+    
+}
+/* Project hover effect */
+.project  {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out !important;
+}
+ .project:hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3) !important;
+        background-color: hsla(240, 50%, 40%, .5);
+}
+/* Project description hover effect */
+.description {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.description:hover {
+    opacity: 1;
 }

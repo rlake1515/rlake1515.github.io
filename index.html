@@ -1,45 +1,105 @@
 <!Doctype HTML>
 <head>
 <link href="style.css" type= "text/css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="javascript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="skrollr.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+<body>
+    <div id="sidebar">
+        <ul>
+        <li class="navElement"><a href="#">Home</a></li>
+        <li class="navElement"><a href="#">Projects</a></li>
+        <li class="navElement"><a href="#">About</a></li>
+        <li class="navElement"><a href="#">Contact</a></li>
+        </ul>
+    </div>
 <section class="module parallax parallax-1">
-  <div class="container">
+  <div class="container ease" id="title">
     <h1>Design</h1>
+    <p>Front-end web development</p>
   </div>
 </section>
 
 <section class="module content">
-  <div class="container">
-    <h2>Entry Level Developer</h2>
-    <p>You know you want these great skills</p>
-  </div>
+    <h2>Development Projects</h2>
+    <div class="container">
+        <a href="http://codepen.io/Robin1515/full/xgEKgZ/" target="_blank">
+        <div class="project col-md-3 col-sm-4 col-xs-6" data--0p-bottom = "opacity: 0;"
+            data--20p-bottom="opacity: 1">
+            Random Quote Machine
+            <div class="description">Quote from random author,
+             with tweet option</div>
+        </div></a>
+        <a href="http://codepen.io/Robin1515/full/dNJZzK/" target="_blank">
+        <div class="project col-md-3 col-sm-4 col-xs-6" data-bottom-top = "opacity[swing]: 0;" 
+            data--0p-bottom="opacity[swing]: 1">
+                 Local Weather
+                 <div class="description">Displays 5-day local weather forecast </div>
+        </div></a>
+        <a href="http://codepen.io/Robin1515/full/mRYXYP/" target="_blank">
+        <div class="project col-md-3 col-sm-4 col-xs-6" data--0p-bottom = "opacity[swing]: 0;"
+            data--20p-bottom="opacity[swing]: 1;">
+                 Wikipedia Viewer
+                 <div class="description">Searches Wikipedia for relevant pages,
+                  with random option</div>
+        </div></a>
+        <a href="http://codepen.io/Robin1515/full/QdXdxx/" target="_blank">
+        <div class="project col-md-3 col-sm-4 col-xs-6" data--0p-bottom = "opacity[swing]: 0;"
+            data--20p-bottom = "opacity[swing]: 1">
+                 Twitch API
+                 <div class="description">Shows if subscribed twitch users are
+                     streaming</div>
+        </div></a>
+        <div class="project col-md-3 col-sm-4 col-xs-6" data--0p-bottom = "opacity[swing]: 0;"
+            data--20p-bottom = "opacity[swing]: 1"></div>
+    </div>
 </section>
+
+
 
 <section class="module parallax parallax-2">
   <div class="container">
     <h1>Technique</h1>
+    <p>Maybe this will work</p>
   </div>
 </section>
 
 <section class="module content">
   <div class="container">
-    <h2>Client Testimony</h2>
-    <p>Could be you</p>
+    <h2>Relevant Skills</h2>
+    <p>HTML CSS Javascript Jquery Bootstrap AJAX</p>
+    <button><a href="Resume_1_Robin_Lake.pdf" target="_blank">Resume</a></button>
   </div>
 </section>
 
 <section class="module parallax parallax-3">
   <div class="container">
-    <h1>Passion</h1>
+    <h1>Quality</h1>
   </div>
 </section>
 
 <section class="module content">
   <div class="container">
     <h2>Contact</h2>
-    <p>Github Linkedin Etc</p>
+    <div class="row">
+        <button>GitHub</button>
+        <button>LinkedIn</button>
+        <button>Gmail</button>
+    </div>
   </div>
 </section>
+<!-- Google Analytics tracking info -->    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93078027-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
