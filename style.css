@@ -2,23 +2,14 @@
   max-width: 960px;
   margin: 0 auto;
 }
-/* Scrolling sections*/
-.module:last-child {
-  margin-bottom: 0;
+.whiteSpace {
+    color: #555;
+    font-family: arial;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
-.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
-}
-.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
-}
-.module p:last-child {
-  margin-bottom: 0;
-}
+/* Parallax sections*/
 .content {
   padding: 40px 0;
   text-align: center;
@@ -38,7 +29,7 @@
     text-align: center;
 }
 .parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(100, 100, 100, 0.8);
   padding-top: 200px;
   font-size: 48px;
   font-weight: 700;
@@ -46,14 +37,20 @@
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.parallax p {
+    color: rgba(100, 100, 100, 0.8);
+}
 .parallax-1 {
-  background-image: url("https://wallpaperbrowse.com/media/images/background-1134468_960_720.jpg");
+  background-image: url("sunny fence.jpg");
+  height: 600px;
 }
 .parallax-2 {
-  background-image: url("https://wallpaperbrowse.com/media/images/518079-background-hd.jpg");
+  background-image: url("bridge.jpg");
+  height: 500px;
 }
 .parallax-3 {
-  background-image: url("https://wallpaperbrowse.com/media/images/background-18.jpg");
+  background-image: url("grass1.jpg");
+  height: 300px;
 }
 /*Title fade-in effect */
 .ease {
@@ -75,23 +72,6 @@
     to {bottom: 0px;}
 }
 
-@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module p {
-    font-size: 20px;
-  }
-  section.module.parallax h1 {
-    font-size: 96px;
-  }
-}
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-  }
-}
-
 /* Fixed Sidebar */
 #sidebar { 
   width: 12%; 
@@ -102,10 +82,12 @@
   border-radius: 15px;
   list-style: none;
   text-align: left;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #11b;
   opacity: .8;
   transition: .3s ease-in-out;
+  z-index: 1;
 }
 #sidebar:hover{
     transform: scale(1.3);
@@ -122,27 +104,35 @@ ul {
 }
 
 
-/* Project scroll-up effect */
 .project {
     width: 200px;
     height: 200px;
     margin: 10px auto;
     border-radius: 20px;
-    background-color: #999;
     float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid blue;
     
 }
 /* Project hover effect */
-.project  {
+.projectImage  {
+        -moz-transform: scale(1);
 	-webkit-transform: scale(1);
 	transform: scale(1);
+        -moz-transition: .3s ease-in-out;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out !important;
+        width: 200px;
+        height: 200px;
 }
- .project:hover  {
+ .projectImage:hover  {
+        -moz-transform: scale(1.3);
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3) !important;
-        background-color: hsla(240, 50%, 40%, .5);
 }
 /* Project description hover effect */
 .description {
@@ -153,4 +143,11 @@ ul {
 }
 .description:hover {
     opacity: 1;
+}
+.skillIcons {
+    display: inline;
+    width: 100px;
+}
+.contactLinks {
+    margin-bottom: 100px;
 }
