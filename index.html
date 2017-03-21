@@ -22,21 +22,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <div id="sidebar">
         <ul>
-        <li class="navElement"><a href="#">Home</a></li>
-        <li class="navElement"><a href="#">Projects</a></li>
-        <li class="navElement"><a href="#">About</a></li>
-        <li class="navElement"><a href="#">Contact</a></li>
+        <li class="navElement"><a href="#title">Home</a></li>
+        <li class="navElement"><a href="#projects">Projects</a></li>
+        <li class="navElement"><a href="#about">About</a></li>
+        <li class="navElement"><a href="#contact">Contact</a></li>
         </ul>
     </div>
 <section class="module parallax parallax-1">
   <div class="container ease" id="title">
-    <h1>Design</h1>
+    <h1>Innovative Design</h1>
     <p>Front-end web development</p>
   </div>
 </section>
 
 <section class="module content">
-    <h2 class='whiteSpace'>Development Projects</h2>
+    <h2 class='whiteSpace' id="projects">Development Projects</h2>
     <div class="container">
         <a href="http://codepen.io/Robin1515/full/xgEKgZ/" target="_blank">
         <div class="project col-md-3 col-sm-4 col-xs-6" data--0p-bottom = "opacity: 0;"
@@ -44,14 +44,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class='projectTitle'>Random Quote Machine</p>
             <div class="description">Quote from random author,
              with tweet option</div>
-            <img class ='projectImage' src='koala_1.png' alt='koala'>
+            <img class ='projectImage' src='Random Quote.png' alt='koala'>
         </div></a>
         <a href="http://codepen.io/Robin1515/full/dNJZzK/" target="_blank">
         <div class="project col-md-3 col-sm-4 col-xs-6" data-bottom-top = "opacity[swing]: 0;" 
             data--0p-bottom="opacity[swing]: 1">
             <p class='projectTitle'>Local Weather</p>
                  <div class="description">Displays 5-day local weather forecast </div>
-                 <img class ='projectImage' src='koala_1.png' alt='koala'>
+                 <img class ='projectImage' src='Local Weather.png' alt='koala'>
         </div></a>
         <a href="https://rlake1515.github.io/Wikipedia-Viewer/" target="_blank">
         <div class="project col-md-3 col-sm-4 col-xs-6" data--0p-bottom = "opacity[swing]: 0;"
@@ -59,20 +59,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class='projectTitle'>Wikipedia Viewer</p>
                  <div class="description">Searches Wikipedia for relevant pages,
                   with random option</div>
-            <img class ='projectImage' src='koala_1.png' alt='koala'>
+            <img class ='projectImage' src='Wikipedia Viewer.png' alt='koala'>
         </div></a>
         <a href="http://codepen.io/Robin1515/full/QdXdxx/" target="_blank">
         <div class="project col-md-3 col-sm-4 col-xs-6">
             <p class='projectTitle'>Twitch API</p>
                  <div class="description">Shows if subscribed twitch users are
                      streaming</div>
-                    <img class ='projectImage' src='koala_1.png' alt='koala'>
+                    <img class ='projectImage' src='Twitch.png' alt='koala'>
         </div></a>
         <a href="https://rlake1515.github.io/Javascript-Calculator/" target="_blank">
         <div class="project col-md-3 col-sm-4 col-xs-6">
             <p class='projectTitle'>Javascript Calculator</p>
             <div class='description'>Perform basic calculations</div>
-            <img class ='projectImage' src='koala_1.png' alt='koala'>
+            <img class ='projectImage' src='Calculator.png' alt='koala'>
         </div></a>
     </div>
 </section>
@@ -81,14 +81,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="module parallax parallax-2">
   <div class="container">
-    <h1>Technique</h1>
-    <p>Maybe this will work</p>
+    <h1></h1>
+    <p></p>
   </div>
 </section>
 
 <section class="module content">
   <div class="container">
-    <h2 class='whiteSpace'>About</h2>
+    <h2 class='whiteSpace' id="about">About</h2>
+    <p class="about">Front-end web developer based in Edmonton, Alberta</p>
     <div class='skillIcons'> 
     <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt='HTML5' class='skillIcons'>
     <img src="http://htmldoctor.info/images/css3.png" alt='CSS3' class='skillIcons'>
@@ -99,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <img src="http://www.iconshock.com/img_vista/SOPHISTIQUE/communications/jpg/apache_server_icon.jpg" alt='Apache' class='skillIcons'>    
     </div>
     <br>
-    <button class='resume' href="Resume_1_Robin_Lake.pdf" target="_blank">Resume</button>
+    <a class='resume' href="Resume Robin Lake(4).pdf" target="_blank">Resume</a>
   </div>
 </section>
 
@@ -109,13 +110,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="module content">
   <div class="container">
-    <h2 class='whiteSpace'>Contact</h2>
+    <h2 class='whiteSpace' id="contact">Contact</h2>
     <div class="contactLinks">
         <a class='contactButton' href='https://github.com/rlake1515' target='_blank'>GitHub</a>
         <a class='contactButton' href='https://www.linkedin.com/in/robin-lake-9a9193137/' target='_blank'>Linkedin</a>
-        <a class='contactButton'>Gmail</a>
+        <a class='contactButton' href="#popup1">Gmail</a>
     </div>
   </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Send me a message</h2>
+            <a class="close" href="#contact">&times;</a>
+            <div class="popupContent">robinhlake@gmail.com</div>
+        </div>
+    </div>
 </section>
 <!-- Google Analytics tracking info -->    
 <script>
