@@ -100,12 +100,15 @@ p {
 .navElement{
     width: 100%;
     transition: .5s ease-in-out;
+    text-decoration: none;
 }
 .navElement:hover{
     background-color: #bbb;
+    text-decoration: none;
 }
-ul {
+#sidebar li {
     list-style-type: none;
+    text-decoration: none;
 }
 
 /* Development project section */
@@ -201,6 +204,19 @@ ul {
     margin-bottom: 100px;
 }
 /* end of resume button */
+
+
+/* contact section */
+.contact {
+    background: #111;
+    color: #eee;
+}
+.contactParagraph {
+    font-size: 18px;
+    width: 800px;
+    text-align: center;
+    margin: 25px auto;
+}
 
 /* custom buttons for contact details */
 .contactButton {
