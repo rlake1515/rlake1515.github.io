@@ -13,6 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>        
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="normalize.css">
 <!-- Particles.js -->
 <script src ='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js' ></script>
 <script src='http://threejs.org/examples/js/libs/stats.min.js'></script>
@@ -23,16 +24,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDR3ZDS"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div id="sidebar">
+
+<a href="#menu" class="menu-link">&#9776;</a>
+
+    <div id="menu" class="panel" role="navigation">
+        <img src="March26.png" width="60" class="profilePicture">
         <ul>
-        <li class="navElement"><a href="#title">Home</a></li>
-        <li class="navElement"><a href="#projects">Projects</a></li>
-        <li class="navElement"><a href="#about">About</a></li>
-        <li class="navElement"><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/robinlake" class="collapseMenu"><span class="icon-github nav-icon"></span>Github</a></li>
+            <li><a href="#projects" class="collapseMenu"><span class="glyphicon glyphicon-lamp"></span>Projects </a></li>
+            <li><a href="#about" class="collapseMenu"><span class="glyphicon glyphicon-apple"></span>About</a></li>
+            <li><a href="#contact" class="collapseMenu"><span class="glyphicon glyphicon-phone-alt"></span>Contact</a></li>
+            <li><a href="http://jsdepth.com" class="collapseMenu"><span class="icon-cog nav-icon"></span>Blog</a></li>
         </ul>
     </div>
 <section class="parallax parallax-1">
-  <div class="container ease" id="title">
+  <div class="container" id="title">
     <h1>Robin Lake</h1>
     <p>Front-end web development</p>
   </div>
@@ -149,5 +155,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   ga('create', 'UA-93078027-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script src="big-slide.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
 </script>
 </body>
