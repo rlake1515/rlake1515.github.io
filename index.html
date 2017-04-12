@@ -14,9 +14,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="normalize.css">
-<!-- Particles.js -->
-<script src ='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js' ></script>
-<script src='http://threejs.org/examples/js/libs/stats.min.js'></script>
+
+<link rel="stylesheet" href="style_1.css">
 <title>Robin Lake Web Development</title>
 </head>
 <body>
@@ -37,12 +36,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li><a href="http://jsdepth.com" class="collapseMenu"><span class="icon-cog nav-icon"></span>Blog</a></li>
         </ul>
     </div>
-<section class="parallax parallax-1">
-  <div class="container" id="title">
+
+<!-- particles.js script -->
+<!--div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div> --> 
+
+<div id="particles-js">
+  <div class="container title" id="title">
     <h1>Robin Lake</h1>
     <p>Front-end web development</p>
   </div>
-</section>
+</div>
+
+<!-- Particles.js -->
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script src="stats.js"></script>
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  //document.body.appendChild(stats.domElement);
+  //count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
 
 <section class="content">
     <h1 class='whiteSpace' id="projects">Development Projects</h1>
@@ -116,15 +147,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class='whiteSpace' id="about">About</h1>
     <p class="about">Front-end web developer based in Edmonton, Alberta. </p>
    
-    <br>
+    <br><br>
     <a class='resume' href="Resume Robin Lake(4).pdf" target="_blank">Resume</a>
   </div>
 </section>
-<!--
+
 <section class="module parallax parallax-3">
 
 </section>
--->
+
 <section class="module content contact">
   <div class="container">
     <h1 class='whiteSpace' id="contact">Get in touch</h1>
