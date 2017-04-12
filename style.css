@@ -16,13 +16,16 @@ p {
 .about {
    font-size: 20px;
    font-weight: 400;
+   width: 30em;
+   margin: 0 auto;
+   padding-bottom: 30px;
 }
 .title{
     position: absolute;
 }
 .title h1{
   color: rgba(20, 20, 20, 1);
-  padding-top: 200px;
+  padding-top: 300px;
   font-size: 48px;
   font-weight: 700;
   text-align: center;
@@ -96,7 +99,6 @@ p {
     height: 200px;
     margin: 10px;
     padding: 5px;
-    float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -104,6 +106,9 @@ p {
     overflow: hidden;
     border: 1px solid blue;
     
+}
+.devProjects {
+    text-align: center;
 }
 /* Project hover effect */
 .projectImage  {
@@ -181,18 +186,20 @@ p {
 .contact {
     background: #111;
     color: #eee;
+    padding-top: 40px;
 }
 .contactParagraph {
     font-size: 18px;
-    width: 800px;
+    width: 30em;
     text-align: center;
-    margin: 25px auto;
+    margin: 10px auto;
+    padding-bottom: 40px;
 }
 
 /* custom buttons for contact details */
 .contactButton {
     padding: 1em 2em;
-    background-color: #999;
+    background-color: #333;
     color: #00f;
     letter-spacing: 2px;
     text-decoration: none;
@@ -204,8 +211,8 @@ p {
 }
 .contactButton:hover {
     text-decoration: none;
-    box-shadow: 5px 5px 0px 0px #66b;
-    background-color: #444;
+    box-shadow: 5px 5px 0px 0px #22b;
+    background-color: #222;
     color: #bbe;
 }
 .contactButton:active{
@@ -506,6 +513,7 @@ Nav Panel
 
 .panel {
   background: #222222 !important;
+  opacity: 0.9;
   z-index: 1;
   position: fixed;
   float: left;
