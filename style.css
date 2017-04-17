@@ -16,6 +16,7 @@ p {
 .about {
    font-size: 20px;
    font-weight: 400;
+   min-width: 25em;
    width: 30em;
    margin: 0 auto;
    padding-bottom: 30px;
@@ -190,6 +191,7 @@ p {
 }
 .contactParagraph {
     font-size: 18px;
+    min-width: 25em;
     width: 30em;
     text-align: center;
     margin: 10px auto;
